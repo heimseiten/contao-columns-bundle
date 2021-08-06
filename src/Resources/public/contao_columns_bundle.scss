@@ -6,7 +6,7 @@
         --border-width: 0px;
     }
 	&:not(.has_inside), &.has_inside > .inside { display: flex; flex-wrap: wrap; justify-content: center;
-        &.inside { margin-left: -20px; margin-left: -20px; }
+        &.inside { margin-left: -20px; margin-right: -20px; }
         & > * { 
             width: calc( ( 100% / var(--columns, 1) ) - ( var(--margin, 0) * 2 ) - ( var(--border-width, 0) * 2 ) ); 
             max-width: calc( 1280px / var(--columns, none) );
