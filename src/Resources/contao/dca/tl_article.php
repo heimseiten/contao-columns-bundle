@@ -4,7 +4,7 @@ use Contao\CoreBundle\DataContainer\PaletteManipulator;
 use Contao\System;
 
 PaletteManipulator::create()
-    ->addLegend('articleColumnsLegend', 'title_legend', PaletteManipulator::POSITION_AFTER)
+    ->addLegend('articleColumnsLegend', 'layout_legend', PaletteManipulator::POSITION_BEFORE)
     ->addField('contentColumns', 'articleColumnsLegend', PaletteManipulator::POSITION_APPEND)
     ->addField('fullWidthColumns', 'articleColumnsLegend', PaletteManipulator::POSITION_APPEND)
     
