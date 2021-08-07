@@ -2,7 +2,9 @@
     "name": "heimseiten/contao-columns-bundle",
     "description": "Eine Spaltenaufteilung der Inhaltselemente kann im Artikel eingestellt werden.",
     "keywords": [
-        "spalten"
+        "spalten",
+        "flexbox",
+        "nebeneinander"
     ],
     "type": "contao-bundle",
     "license": "GPL-3.0-or-later",
