@@ -1,6 +1,6 @@
 {
     "name": "heimseiten/contao-columns-bundle",
-    "description": "Eine Spaltenaufteilung der Inhaltselemente kann im Artikel eingestellt werden.",
+    "description": "Eine Spaltenaufteilung der Inhaltselemente kann im Artikel eingestellt werden. Einzelne Inhaltselemente können für die Spaltenanzeige deaktiviert werden.",
     "keywords": [
         "spalten",
         "flexbox",
