@@ -15,11 +15,12 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['noColumn'] = [
 $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (DataContainer $dc): void {
     foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $key => $palette) {
         if (\is_string($palette)) {
-            PaletteManipulator::create()
-            ->addLegend('columns_legend', 'template_legend', PaletteManipulator::POSITION_BEFORE, true)
+            if ($key != 'headline') { 
+                PaletteManipulator::create()
+                ->addLegend('columns_legend', 'template_legend', PaletteManipulator::POSITION_BEFORE, true)
                 ->addField('noColumn', 'columns_legend', PaletteManipulator::POSITION_APPEND)
-                ->applyToPalette($key, $dc->table)
-            ;
+                ->applyToPalette($key, $dc->table);
+            }
         }
     }
 };
