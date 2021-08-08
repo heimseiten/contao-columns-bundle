@@ -21,7 +21,7 @@ class HooksListener
     private function processBuffer(string $buffer, $object): string
     {
         if (TL_MODE === 'BE' || !$object->noColumn) { return $buffer; }
-        $buffer = preg_replace('/class="([^"]+)"/', 'class="$1 no_column"', $buffer, 1);
+        $buffer = preg_replace('/class="([^"]+)"/', 'class="$1 no_column has_inside"', $buffer, 1);
         $buffer = preg_replace('/>/', '><div class="inside">', $buffer, 1);
         $buffer = $buffer . '</div>';
         return $buffer;
