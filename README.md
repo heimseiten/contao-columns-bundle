@@ -1,1 +1,1 @@
-# Welcome to Contao Spalten
+# Contao Spalten
