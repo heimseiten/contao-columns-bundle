@@ -17,8 +17,7 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (Data
         if (\is_string($palette)) {
             if ($key != 'headline') { 
                 PaletteManipulator::create()
-                ->addLegend('columns_legend', 'template_legend', PaletteManipulator::POSITION_BEFORE, true)
-                ->addField('noColumn', 'columns_legend', PaletteManipulator::POSITION_APPEND)
+                ->addField('noColumn', 'expert_legend', PaletteManipulator::POSITION_APPEND)
                 ->applyToPalette($key, $dc->table);
             }
         }
