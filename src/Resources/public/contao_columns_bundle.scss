@@ -12,7 +12,8 @@
             margin: 20px; 
             @media(max-width:1023px){ width: calc( ( 100% / 2 ) - ( var(--margin, 0) * 2 ) - ( var(--border-width, 0) * 2 ) );  }
             @media(max-width:640px){  width: calc( ( 100% / 1 ) - ( var(--margin, 0) * 2 ) - ( var(--border-width, 0) * 2 ) );  }
-		    &.no_column { width: 100%; max-width: 100%; border: 0; background: transparent; padding: 0; margin: 0; margin-bottom: 20px;
+		    &:not(.no_column) { padding: 0; }
+            &.no_column { width: 100%; max-width: 100%; border: 0; background: transparent; margin: 0; margin-bottom: 20px;
                 & > .inside { width: var(--article_inside_width, 100%); margin: auto; }
             }
 	    }
