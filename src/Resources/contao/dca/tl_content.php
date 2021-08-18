@@ -8,7 +8,7 @@ use Contao\DataContainer;
 $GLOBALS['TL_DCA']['tl_content']['fields']['noColumn'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_content']['noColumn'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50'),
+    'eval'      => array('tl_class' => 'w50 m12'),
     'sql'       => "char(1) NOT NULL default ''" 
 ];
 
